@@ -47,3 +47,9 @@ INSERT INTO user
 
 SELECT * FROM user;
 
+-- Quando um usuário faz login
+SELECT * FROM user WHERE u_email = "jocasilva@email.com" AND u_password = SHA2("Senha@123", 256);
+
+-- Mostrando um hash SHA2
+SELECT SHA2("senha@123", 256);
+
